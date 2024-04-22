@@ -11,24 +11,22 @@ class Animal {
         $this->habitat = $habitat;
         $this->diet = $diet;
     }
-
+// function on get species
     public function getSpecies() {
         return $this->species;
     }
 
-
+// function on get habitat
     public function getHabitat() {
         return $this->habitat;
     }
 
+// function on get diet
     public function getDiet() {
         return $this->diet;
     }
 
-    public function setDiet($diet) {
-        $this->diet = $diet;
-    }
-
+// function on make sound
     public function makeSound() {
         return "Animal Sound: ";
     }
@@ -118,7 +116,7 @@ class Bird extends Animal {
     }
 }
 
-// Instantiate objects of Mammal and Bird classes
+// Instantiate objects of mammal and bird classes
 $mammal = new Mammal("Tiger", "Jungle", "Carnivore", "Orange", 4, true);
 $bird = new Bird("Eagle", "Mountains", "Carnivore", 2, true, "Long");
 
